@@ -1,0 +1,27 @@
+Model: "model_6"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to
+==================================================================================================
+ Factors (InputLayer)           [(None, None)]       0           []
+
+ Expansions (InputLayer)        [(None, None)]       0           []
+
+ embedding_12 (Embedding)       (None, None, 50)     200000      ['Factors[0][0]']
+
+ embedding_13 (Embedding)       (None, None, 50)     200000      ['Expansions[0][0]']
+
+ bidirectional_6 (Bidirectional  (None, 400)         1084800     ['embedding_12[0][0]']
+ )
+
+ gru_13 (GRU)                   (None, None, 400)    542400      ['embedding_13[0][0]',
+                                                                  'bidirectional_6[0][0]']
+
+ dropout_6 (Dropout)            (None, None, 400)    0           ['gru_13[0][0]']
+
+ dense_6 (Dense)                (None, None, 4000)   1604000     ['dropout_6[0][0]']
+
+==================================================================================================
+Total params: 3,631,200
+Trainable params: 3,631,200
+Non-trainable params: 0
+__________________________________________________________________________________________________

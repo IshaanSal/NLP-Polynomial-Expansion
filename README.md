@@ -5,9 +5,9 @@ Taking into consideration the Natural Language Processing (NLP) objective of the
 In essence, a recurrent neural network (RNN) is a type of neural network designed to process sequential data, such as time series and typically natural language text. While feedforward networks process input data in a static manner, RNN’s provide more dynamic capabilities in the form of processing input sequences with varying lengths. A significant advantage of these sequence-to-sequence networks is their ability to manage data passed “one step at a time,” meaning they take into account the current input, as well as the previous inputs as well, ultimately resulting in a more optimized training model.
 
 **Implementation Methodology:**
-Data Organization - Converting raw data into usable arrays
-Tokenization - Split arrays into understandable units
-Vectorization - Convert tokens into machine-readable vectors
+Data Organization - Converting raw data into usable arrays ||
+Tokenization - Split arrays into understandable units ||
+Vectorization - Convert tokens into machine-readable vectors ||
 Model Training - Training the RNN to predict the expanded form based on the factored
 
 _Data Organization:_

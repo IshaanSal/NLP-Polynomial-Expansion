@@ -1,6 +1,9 @@
 # NLP-Polynomial-Expansion
 Implementation of a deep learning model that learns to expand single variable polynomials, where the model takes the factorized sequence as inputs and predicts the expanded sequence. { EX: (h+8)*(7*h-3)=7*h^2+53*h-24 }
 
+**OBJECTIVE**
+The general objective of this project was to train a neural network to predict the expanded form of a polynomial expression in its factored form. As opposed to using data-parsing or rule-based methods that would involve teaching the specifics of math, this model focuses on using a machine learning approach.
+
 Taking into consideration the Natural Language Processing (NLP) objective of the project, my overall approach of handling this task came down to utilizing the artificial intelligence construct of Recurrent Neural Networks.
 In essence, a recurrent neural network (RNN) is a type of neural network designed to process sequential data, such as time series and typically natural language text. While feedforward networks process input data in a static manner, RNN’s provide more dynamic capabilities in the form of processing input sequences with varying lengths. A significant advantage of these sequence-to-sequence networks is their ability to manage data passed “one step at a time,” meaning they take into account the current input, as well as the previous inputs as well, ultimately resulting in a more optimized training model.
 
